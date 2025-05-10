@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator">
+        <h1>Simple Interest Calculator</h1>
+
+        <!-- Input fields for Principal, Rate, and Time -->
+        <label for="principal">Principal (P):</label>
+        <input type="number" id="principal" placeholder="Enter Principal">
+
+        <label for="rate">Rate of Interest (R):</label>
+        <input type="number" id="rate" placeholder="Enter Rate of Interest">
+
+        <label for="time">Time Period (T) in years:</label>
+        <input type="number" id="time" placeholder="Enter Time Period">
+
+        <button onclick="calculateInterest()">Calculate Interest</button>
+
+        <div id="result">
+            <p>Simple Interest (SI): <span id="simpleInterest">0</span></p>
+            <p>Total Amount (A): <span id="totalAmount">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
